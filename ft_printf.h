@@ -6,7 +6,7 @@
 /*   By: timanish <timanish@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/26 08:55:36 by timanish          #+#    #+#             */
-/*   Updated: 2024/05/27 17:46:22 by timanish         ###   ########.fr       */
+/*   Updated: 2025/04/03 21:28:39 by timanish         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,8 @@ int		put_adr(unsigned long long ap, int fd);
 int		ap_format(va_list ap, char specifier);
 int		space_word(char word);
 int		ft_printf(const char *format, ...);
+int		put_adr_sub(unsigned long long ap, int fd);
+int		p_null(unsigned long long adr, int fd);
+int		put_adr(unsigned long long ap, int fd);
 
 #endif

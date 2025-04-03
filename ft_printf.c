@@ -6,7 +6,7 @@
 /*   By: timanish <timanish@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 13:12:04 by timanish          #+#    #+#             */
-/*   Updated: 2024/06/07 19:05:55 by timanish         ###   ########.fr       */
+/*   Updated: 2025/04/03 21:33:14 by timanish         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,7 @@ int	ap_format(va_list ap, char specifier)
 	else if (specifier == 's')
 		count += ft_putstr_fd (va_arg(ap, char *), 1);
 	else if (specifier == 'p')
-	{
-		write (1, hex, 2);
 		count += put_adr(va_arg(ap, unsigned long long), 1);
-	}
 	else if (specifier == 'd' || specifier == 'i')
 		count += ft_putnbr_fd (va_arg(ap, int), 1);
 	else if (specifier == 'u')
